@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 file = open('NASA_access_log_Jul95')
 
 ip_address = []
@@ -16,10 +18,14 @@ except:
 
 from collections import Counter
 
-a = Counter(ip_address).most_common(1)
-b = Counter(files).most_common(1)
-c = Counter(time).most_common(1)
-print(a)
-print(b)
-print(c)
+a = Counter(ip_address)#.most_common(1)
+# b = Counter(files).most_common(1)
+# c = Counter(time).most_common(1)
+print(a.keys())
+print(a.values())
+
+plt.plot(a.keys(), a.values())
+plt.show()
+# print(b)
+# print(c)
 
