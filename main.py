@@ -48,9 +48,9 @@ font2 = {'family':'serif','color':'darkred','size':15}
 
 plt.bar(newDict.keys(), newDict.values(), color = "red", ) 
 plt.xticks(rotation=30, ha='right')
-plt.title("Ip Adresses", fontdict = font1)
+plt.title("Most Popular IP Addresses", fontdict = font1)
 plt.xlabel("Average Pulse", fontdict = font1)
-plt.ylabel("Number of Ip Adresses", fontdict = font2)
+plt.ylabel("Frequency", fontdict = font2)
 
 plt.show()
 
