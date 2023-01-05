@@ -43,22 +43,15 @@ print(newDicts)
 print(Logs.keys)
 print(Logs.values)
 
-font1 = {'family':'serif','color':'blue','size':20}
-font2 = {'family':'serif','color':'darkred','size':15}
+font1 = {'family':'fantasy','color': '#DB7093','size':20}
+font2 = {'family':'fantasy','color':'#DB7093','size':15}
 
-plt.bar(newDict.keys(), newDict.values(), color = "red", ) 
+plt.bar(newDict.keys(), sorted(newDict.values()), color = "#FFC0CB", ) 
 plt.xticks(rotation=30, ha='right')
 plt.title("Most Popular IP Addresses", fontdict = font1)
-plt.xlabel("Average Pulse", fontdict = font1)
+plt.xlabel("IP Address", fontdict = font1)
 plt.ylabel("Frequency", fontdict = font2)
-
 plt.show()
-
-plt.bar(newDicts.keys(), newDicts.values(), color = "red") 
-plt.xticks(rotation=50, ha='right')
-plt.show()
-
-
 # print(c)
 # print(k)
 # print(t)
