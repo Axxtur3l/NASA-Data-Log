@@ -43,15 +43,25 @@ print(newDicts)
 print(Logs.keys)
 print(Logs.values)
 
-font1 = {'family':'fantasy','color': '#DB7093','size':20}
-font2 = {'family':'fantasy','color':'#DB7093','size':15}
+font1 = {'family':'fantasy','color': 'darkslateblue','size':20}
+font2 = {'family':'fantasy','color':'darkslateblue','size':15}
 
-plt.bar(newDict.keys(), sorted(newDict.values()), color = "#FFC0CB", ) 
+plt.bar(newDict.keys(), sorted(newDict.values()), color = "slateblue", ) 
 plt.xticks(rotation=30, ha='right')
 plt.title("Most Popular IP Addresses", fontdict = font1)
 plt.xlabel("IP Address", fontdict = font1)
 plt.ylabel("Frequency", fontdict = font2)
+
 plt.show()
+
+plt.plot(newDicts.keys(), newDicts.values(), color = "slateblue") 
+plt.xticks(rotation=50, ha='right')
+plt.title("Most Fetched Data Types", fontdict = font1)
+plt.xlabel("Data Type", fontdict = font1)
+plt.ylabel("Frequency", fontdict = font2)
+
+plt.show()
+
 # print(c)
 # print(k)
 # print(t)
